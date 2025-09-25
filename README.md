@@ -13,6 +13,35 @@ This is a collaboration repo between AF Group + Microsoft for developing a POC c
 # Current Agent Graph
 ![Project Graph](docs/graph_image.png)
 
+## Quick Start
+
+### Deploy to Azure
+For a complete Azure deployment with all services:
+```bash
+./deploy.sh
+```
+
+### Local Development Setup
+To set up the local development environment:
+```bash
+./setup-local.sh
+```
+
+### Documentation
+- **[Complete Deployment Guide](DEPLOYMENT.md)** - Detailed step-by-step deployment instructions
+- **Local Development** - See setup-local.sh for quick local setup
+- **Architecture** - Azure-based Flask application with OpenAI, Cosmos DB, and AI Search
+
+## Architecture Overview
+- **Frontend**: Flask web application with chat interface
+- **Backend**: Python Flask API with LangGraph AI agent
+- **AI Services**: Azure OpenAI for chat and embeddings
+- **Search**: Azure AI Search for RAG functionality  
+- **Database**: Azure Cosmos DB for chat history
+- **Storage**: Azure Blob Storage for documents
+- **Monitoring**: Azure Application Insights
+- **Security**: Azure Key Vault for secrets
+
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
